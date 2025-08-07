@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva | Design anything with ease</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .category-btn.active {
+            background-color: rgba(0,0,0,0.1);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a49acd7c-b401-46a6-8eaa-85033db5277f.png" alt="Canva logo with bold colorful letters on white background" class="h-8">
+                    </div>
+                    
+                    <!-- Primary Nav -->
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:bg-gray-100">Templates</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">Design</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">Features</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">Pricing</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search and Auth -->
+                <div class="flex items-center">
+                    <div class="relative mx-4 hidden md:block">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input type="text" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Search templates...">
+                    </div>
+                    
+                    <button 
+    onclick="window.location.href='https://www.canva.com/en_in/signup/'" 
+    class="hidden md:block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+    Sign up free
+</button>
+
+                    
+                    <button class="ml-2 px-3 py-2 rounded-md text-sm font-medium text-gray-900 hover:bg-gray-100 md:hidden">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Design anything.<br>Publish anywhere.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Canva makes it easy to create professional-quality designs with thousands of free, customizable templates.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Get started - it's free
+                        </button>
+                        <button class="px-6 py-3 bg-white text-gray-700 font-medium rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                            See how it works
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="floating-animation">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/511da051-b56b-454a-abca-59246f38cad5.png" alt="Sample Canva dashboard showing various design templates for social media posts, presentations, and marketing materials" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="absolute -bottom-5 -left-5 w-32 h-32 rounded-full bg-yellow-400 opacity-20 animate-pulse"></div>
+                    <div class="absolute -top-5 -right-5 w-16 h-16 rounded-full bg-purple-400 opacity-20 animate-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Categories -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Popular template categories</h2>
+        
+        <div class="flex overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
+            <div class="flex space-x-4">
+                <button class="category-btn active shrink-0 px-6 py-3 rounded-full bg-gray-100 text-gray-900 font-medium hover:bg-gray-200">
+                    All
+                </button>
+                <button class="category-btn shrink-0 px-6 py-3 rounded-full bg-white text-gray-700 font-medium hover:bg-gray-100 border border-gray-200">
+                    Social Media
+                </button>
+                <button class="category-btn shrink-0 px-6 py-3 rounded-full bg-white text-gray-700 font-medium hover:bg-gray-100 border border-gray-200">
+                    Marketing
+                </button>
+                <button class="category-btn shrink-0 px-6 py-3 rounded-full bg-white text-gray-700 font-medium hover:bg-gray-100 border border-gray-200">
+                    Presentations
+                </button>
+                <button class="category-btn shrink-0 px-6 py-3 rounded-full bg-white text-gray-700 font-medium hover:bg-gray-100 border border-gray-200">
+                    Documents
+                </button>
+                <button class="category-btn shrink-0 px-6 py-3 rounded-full bg-white text-gray-700 font-medium hover:bg-gray-100 border border-gray-200">
+                    Video
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Template 1 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2a17034c-9279-42e7-a1e9-3c2255e916b9.png" alt="Instagram post template with modern typography and pink gradient background" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Instagram Post</h3>
+                    <p class="text-gray-500 text-sm">Social Media</p>
+                </div>
+            </div>
+            
+            <!-- Template 2 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa231532-6522-439a-84a6-fa318f319deb.png" alt="Business presentation slide with blue and white theme and data visualization" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Business Presentation</h3>
+                    <p class="text-gray-500 text-sm">Presentations</p>
+                </div>
+            </div>
+            
+            <!-- Template 3 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e3bcf2f-f6f9-4f30-8b72-b121f4ecd8b6.png" alt="Flyer template for food promotion with fresh vegetables and clean layout" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Restaurant Flyer</h3>
+                    <p class="text-gray-500 text-sm">Marketing</p>
+                </div>
+            </div>
+            
+            <!-- Template 4 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a9cfc49d-47ce-487c-9915-54ecb65493eb.png" alt="Professional resume template with geometric design elements in navy blue" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Professional Resume</h3>
+                    <p class="text-gray-500 text-sm">Documents</p>
+                </div>
+            </div>
+            
+            <!-- Template 5 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbfec7ce-f89a-4585-a687-da630d6c6c78.png" alt="YouTube thumbnail template with bold text and colorful abstract background" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">YouTube Thumbnail</h3>
+                    <p class="text-gray-500 text-sm">Video</p>
+                </div>
+            </div>
+            
+            <!-- Template 6 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9715d6bc-32e1-4d78-b1c3-79d2f7ff8c43.png" alt="Facebook cover photo template with nature landscape and overlay for text" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Facebook Cover</h3>
+                    <p class="text-gray-500 text-sm">Social Media</p>
+                </div>
+            </div>
+            
+            <!-- Template 7 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70b70d49-03e4-449a-be31-43137aa1597d.png" alt="Business card template with minimalist design and gold foil accents" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Business Card</h3>
+                    <p class="text-gray-500 text-sm">Marketing</p>
+                </div>
+            </div>
+            
+            <!-- Template 8 -->
+            <div class="template-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:cursor-pointer">
+                <div class="relative pb-[75%]">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78838615-62a9-4485-b9c4-67ea3f4c690a.png" alt="Brochure template for travel agency with tropical beach photo and layout" class="absolute h-full w-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Travel Brochure</h3>
+                    <p class="text-gray-500 text-sm">Documents</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt15">
+            <button class="mt-10 px-6 py-3 bg-white text-gray-700 font-medium rounded-lg hover:bg-gray-100 border border-gray-200">
+                Browse all templates
+            </button>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to design like a pro?</h2>
+                <p class="text-xl mb-8 max-w-3
